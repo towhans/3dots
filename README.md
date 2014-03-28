@@ -41,6 +41,13 @@ String: String,...
 }
 
 ```
+## Try
+
+```
+git clone https://github.com/towhans/3dots.git
+cd 3dots
+perl generate.pl
+```
 
 ## Status
 
