@@ -10,7 +10,7 @@ Because other JSON schemas are
 * too complicated - too much syntax to remember
 * not powerfull enough - try writing a JSON schema for the example bellow and you'll see
 
-When writing a 3dots schema you start with an example and replace repeating parts with "..." operator. Plus 2 built in types String and Int. That's it.
+When writing a 3dots schema you start with an example and replace repeating parts with "..." operator. Plus 2 built in types String and Int. You can substitute `,` with pipe `|`. Pipe means OR. The opearands are PMS (previous meaningful section) and the following meaningful section.
 
 ## How
 
@@ -27,7 +27,8 @@ String: String,...
 	"id" : Int,
 	"children" : [Int,...],
 	"objects" : [
-		{String: Int,...},
+		{"name": String}|
+		{"price": Int},
 		...
 	],
 	"lookup" : {
